@@ -1,0 +1,5 @@
+#!/bin/sh
+# Runs bcurl.py with whichever Python 3 is installed.
+DIR=$(dirname "$0")
+if command -v python3 >/dev/null 2>&1; then exec python3 "$DIR/bcurl.py" "$@"; fi
+exec python "$DIR/bcurl.py" "$@"

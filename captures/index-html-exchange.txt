@@ -1,0 +1,37 @@
+> PREFACE b'BHTP/1\r\n'
+>   0000  42 48 54 50 2f 31 0d 0a                           |BHTP/1..|
+> REQUEST len=55 flags=0x01(END_STREAM) id=1
+>   :method: GET
+>   :path: /index.html
+>   host: localhost:9000
+>   user-agent: bcurl/1.0
+>   accept: */*
+>   0000  00 00 37 01 01 00 00 01  01 00 03 47 45 54 02 00  |..7........GET..|
+>   0010  0b 2f 69 6e 64 65 78 2e  68 74 6d 6c 03 00 0e 6c  |./index.html...l|
+>   0020  6f 63 61 6c 68 6f 73 74  3a 39 30 30 30 04 00 09  |ocalhost:9000...|
+>   0030  62 63 75 72 6c 2f 31 2e  30 05 00 03 2a 2f 2a     |bcurl/1.0...*/*|
+< RESPONSE len=80 flags=0x00(-) id=1
+<   status: 200
+<   server: bserve/1.0
+<   content-type: text/html; charset=utf-8
+<   content-length: 152
+<   last-modified: Fri, 25 Sep 2026 10:12:23 GMT
+<   0000  00 00 50 02 00 00 00 01  00 c8 07 00 0a 62 73 65  |..P..........bse|
+<   0010  72 76 65 2f 31 2e 30 08  00 18 74 65 78 74 2f 68  |rve/1.0...text/h|
+<   0020  74 6d 6c 3b 20 63 68 61  72 73 65 74 3d 75 74 66  |tml; charset=utf|
+<   0030  2d 38 09 00 03 31 35 32  0a 00 1d 46 72 69 2c 20  |-8...152...Fri, |
+<   0040  32 35 20 53 65 70 20 32  30 32 36 20 31 30 3a 31  |25 Sep 2026 10:1|
+<   0050  32 3a 32 33 20 47 4d 54                           |2:23 GMT|
+< DATA len=152 flags=0x01(END_STREAM) id=1
+<   0000  00 00 98 03 01 00 00 01  3c 21 64 6f 63 74 79 70  |........<!doctyp|
+<   0010  65 20 68 74 6d 6c 3e 0a  3c 68 74 6d 6c 3e 3c 68  |e html>.<html><h|
+<   0020  65 61 64 3e 3c 6d 65 74  61 20 63 68 61 72 73 65  |ead><meta charse|
+<   0030  74 3d 22 75 74 66 2d 38  22 3e 3c 74 69 74 6c 65  |t="utf-8"><title|
+<   0040  3e 62 73 65 72 76 65 3c  2f 74 69 74 6c 65 3e 3c  |>bserve</title><|
+<   0050  2f 68 65 61 64 3e 0a 3c  62 6f 64 79 3e 3c 68 31  |/head>.<body><h1|
+<   0060  3e 48 65 6c 6c 6f 20 66  72 6f 6d 20 62 73 65 72  |>Hello from bser|
+<   0070  76 65 3c 2f 68 31 3e 3c  70 3e 53 65 72 76 65 64  |ve</h1><p>Served|
+<   0080  20 6f 76 65 72 20 42 48  54 50 2f 31 2e 3c 2f 70  | over BHTP/1.</p|
+<   0090  3e 3c 2f 62 6f 64 79 3e  3c 2f 68 74 6d 6c 3e 0a  |></body></html>.|
+* /index.html -> 200 (152 body bytes)
+* 1 request(s) on 1 connection
